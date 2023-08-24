@@ -11,7 +11,7 @@ int main() {
     if (discriminant >= 0) {
         double root1 = (-b + sqrt(discriminant)) / (2 * a);
         double root2 = (-b - sqrt(discriminant)) / (2 * a);
-        printf("Roots: %.2lf, %.2lf\n", root1, root2);
+        printf("Roots: %.2lf, %.2lf", root1, root2);
     } else {
         printf("No real roots.\n");
     }

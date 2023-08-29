@@ -14,14 +14,21 @@ int main() {
         // Calculate paise and rupees separately for the given range
         paise_total += 5 * 50 ;
         rupees_total += days - 5;
-    } else {
+    } else if(days>10 && days<=30 ){
         // Calculate paise and rupees separately for the last range
         paise_total += 5 * 50 ;
         rupees_total += 5 + 5*(days - 10);
+    } 
+
+    
+
+    if (days >30 ) {
+        printf("your subscription is cancelled");
+    }else {
+        // Output: Print the total amount in rupees and paise
+        printf("Amount to be paid is %d rupees and %d paise", rupees_total, paise_total);
     }
 
-    // Output: Print the total amount in rupees and paise
-    printf("Amount to be paid is %d rupees and %d paise", rupees_total, paise_total);
 
     return 0;
 }

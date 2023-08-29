@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main() {
@@ -11,12 +12,12 @@ int main() {
         paise_total += days * 50;
     } else if (days >= 6 && days <= 10) {
         // Calculate paise and rupees separately for the given range
-        paise_total += 5 * 50 + (days - 5);
+        paise_total += 5 * 50 ;
         rupees_total += days - 5;
     } else {
         // Calculate paise and rupees separately for the last range
-        paise_total += 5 * 50 + 5 + (days - 10) * 10;
-        rupees_total += 5 + (days - 10);
+        paise_total += 5 * 50 ;
+        rupees_total += 5 + 5*(days - 10);
     }
 
     // Output: Print the total amount in rupees and paise
@@ -24,6 +25,8 @@ int main() {
 
     return 0;
 }
+
+
 
 
 

@@ -31,3 +31,6 @@ int main()
         printf("Number is Not Armstrong");
     }
 }
+
+
+//CREDITS TO REHNOOR AULAKH 

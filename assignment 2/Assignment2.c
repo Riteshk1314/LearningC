@@ -1,3 +1,6 @@
+// CREDITS
+//Arjun Singh singh.arjun2797@gmail.com //
+
 // ************** 1. WAP FOR c.math FUNCTIONS ************
 
 

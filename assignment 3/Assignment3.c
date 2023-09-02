@@ -1,3 +1,6 @@
+// CREDITS
+//Arjun Singh singh.arjun2797@gmail.com //
+
 /*********** 1. WAP TO CHECK ENTERED CHARACTER IS CAPITAL LETTER, SMALL LETTER, A DIGIT OR SPECIAL SYMBOL ***********/
 
 

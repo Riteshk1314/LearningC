@@ -11,7 +11,7 @@ int main()
     int ind;
     printf("Enter the index of number");
     scanf("%d",&ind);
-    for(int i=5;i>=ind;i--)
+    for(int i=5;i>=ind+1;i--)
     {
         a[i]=a[i-1];
     }

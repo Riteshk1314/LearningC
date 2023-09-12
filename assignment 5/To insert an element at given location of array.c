@@ -1,18 +1,23 @@
+//Write a program to insert a number at a given location of an array
+
 #include<stdio.h>
 int main()
+
 {
-    int a[10]={1,2,3,4,5,6,7,8,9,10};
-    int i,n,b;
-    printf("Enter the index at which you wish to insert number\n");
-    scanf("%d",&i);
-    printf("Enter the number you wish to insert\n");
+    int a[6]={15,26,37,42,69};
+    printf("Enter the number to insert");
+    int n;
     scanf("%d",&n);
-    b=a[i];
-    a[i]=n;
-    n=b;
-    for(i=0;i<=9;i++)
+    int ind;
+    printf("Enter the index of number");
+    scanf("%d",&ind);
+    for(int i=5;i>=ind;i--)
+    {
+        a[i]=a[i-1];
+    }
+    a[ind]=n;
+    for(int i=0;i<=5;i++)
     {
         printf("%d\n",a[i]);
     }
-    
 }

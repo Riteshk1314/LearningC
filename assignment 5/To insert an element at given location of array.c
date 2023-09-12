@@ -4,7 +4,7 @@
 int main()
 
 {
-    int a[6]={15,26,37,42,69};
+    int a[6]={15,26,37,42,68};
     printf("Enter the number to insert");
     int n;
     scanf("%d",&n);

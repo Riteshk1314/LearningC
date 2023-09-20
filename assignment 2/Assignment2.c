@@ -151,6 +151,18 @@ return 0;}*/
 // }
 
 
+//************** 10. WAP to practice type casting using the atof/atoi ************************
+
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main(){
+//  char *s = "3.145";
+//  float f = atof(s);
+//  int i = atoi(s);
+//  printf("f = %f\n", f);
+//  printf("i = %d\n", i)
+
+
 
 
 

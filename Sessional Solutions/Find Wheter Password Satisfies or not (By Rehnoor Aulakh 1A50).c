@@ -1,3 +1,5 @@
+//Write a program to input password. It should have minimum length of 6 and at least one english alphabet and one digit, if all conditions fulfil, print 1 else print 0
+
 //In the dev cpp compiler, output 123456 shows 1 but in the online compiler it shows 0 (compiler issue)
 
 #include<stdio.h>

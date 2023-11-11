@@ -1,5 +1,5 @@
 //Find 2 Numbers from a sorted array such that they add to a specific target
-
+// two pointer algorith is used here which converts O(n ^2) to O(n) check its article on gfg 
 #include <iostream>
 #include<vector>
 
@@ -53,3 +53,5 @@ int main()
     display(ans);
     
 }
+
+// ~credits- rehnoor 

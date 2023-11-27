@@ -15,47 +15,30 @@ void display(vector<int> &ans)
 
 vector<int> productExceptSelf(vector<int>& nums) 
 {
+    
+    int i=0,j=0;
+    int n=nums.size();
     vector<int> answer;
-    int ans=1;
-    int flag=0;
-    int i;
-    for(i=0;i<nums.size();i++)
+    int left[n],right[n];
+    left[0]=1;
+    right[n-1]=1;
+    for(i=1;i<n;i++)
     {
-        if(nums[i]!=0)
-        {
-            ans=ans*nums[i];
-        }
-        else
-        {
-            flag=1;
-        }
-            
+        left[i]=left[i-1]*nums[i-1];
+        
     }
-    for(i=0;i<nums.size();i++)
+    for(i=n-2;i>=0;i--)
     {
-        if(nums[i]!=0 && flag==0)
-        {
-        answer.push_back(ans/nums[i]);
-        }
-        else if(flag==1 && nums[i]!=0)
-        {
-            answer.push_back(0);
-
-        }
-        else if(nums[i]==0)
-        {
-            ans=1;
-            for(int j=0;j<nums.size();j++)
-            {
-                if(j!=i)
-                {
-                    ans=ans*nums[j];
-                }
-            }
-            answer.push_back(ans);
-        }
-
+        right[i]=right[i+1]*nums[i+1];
     }
+    for(i=0;i<n;i++)
+    {
+        answer.push_back(left[i]*right[i]);
+    }
+    
+    
+    
+    display(answer);
     return answer;
     
 }

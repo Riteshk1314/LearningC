@@ -12,7 +12,7 @@ int main()
     int temp;
     for(p=a;p<=a+n-1;p++)
     {
-        for(q=a;q<=a+n-2-;q++)
+        for(q=a;q<=a+n-2;q++)
         {
             if(*q>*(q+1))
             {

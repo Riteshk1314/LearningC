@@ -1,5 +1,5 @@
 #include<stdio.h>
-//Sum of elements of array using recursion and pointers
+//Linear Search using recursion and pointers
 
 int search(int a[],int *p,int n)
 {

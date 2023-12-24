@@ -5,17 +5,18 @@
 int main()
 {
     char s[50];
-    printf("Enter String");
+    printf("Enter String\n");
     scanf("%s",&s);
     int x;
     x=strlen(s);
-    strcat(s,s);
-    for(int i=0;i<strlen(s)-x-1;i++)
+    for(int i=0;i<x;i++)
     {
-        for(int j=i;j<x+i;j++)
+        for(int j=i;j<x;j++)
         {
             printf("%c",s[j]);
         }
-        printf(",");
+        for(int k = 0;k<i;k++)
+        printf("%c",s[k]);
+        printf("\n");
     }
 }

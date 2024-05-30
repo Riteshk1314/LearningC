@@ -11,5 +11,5 @@ void factorial(int x){
 }
 
 int main() {
-    factorial(3);
+    factorial(34);
 }
